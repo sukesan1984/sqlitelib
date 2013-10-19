@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		25002F2D1812554600114AE3 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 25002F2C1812554600114AE3 /* main.cpp */; };
 		25002F2F1812554600114AE3 /* sqltest.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 25002F2E1812554600114AE3 /* sqltest.1 */; };
+		25002F3B1812555B00114AE3 /* sqlite3.c in Sources */ = {isa = PBXBuildFile; fileRef = 25002F371812555B00114AE3 /* sqlite3.c */; };
+		25002F411812564800114AE3 /* SqlTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 25002F3F1812564800114AE3 /* SqlTest.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -28,6 +30,12 @@
 		25002F291812554600114AE3 /* sqltest */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = sqltest; sourceTree = BUILT_PRODUCTS_DIR; };
 		25002F2C1812554600114AE3 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		25002F2E1812554600114AE3 /* sqltest.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = sqltest.1; sourceTree = "<group>"; };
+		25002F371812555B00114AE3 /* sqlite3.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = sqlite3.c; sourceTree = "<group>"; };
+		25002F381812555B00114AE3 /* sqlite3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sqlite3.h; sourceTree = "<group>"; };
+		25002F391812555B00114AE3 /* sqlite3ext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sqlite3ext.h; sourceTree = "<group>"; };
+		25002F3F1812564800114AE3 /* SqlTest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SqlTest.cpp; sourceTree = "<group>"; };
+		25002F401812564800114AE3 /* SqlTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SqlTest.h; sourceTree = "<group>"; };
+		25002F4618126E4500114AE3 /* sample.db */ = {isa = PBXFileReference; lastKnownFileType = file; path = sample.db; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,10 +68,32 @@
 		25002F2B1812554600114AE3 /* sqltest */ = {
 			isa = PBXGroup;
 			children = (
+				25002F4318126D9800114AE3 /* Resources */,
+				25002F351812554F00114AE3 /* sqlite */,
 				25002F2C1812554600114AE3 /* main.cpp */,
 				25002F2E1812554600114AE3 /* sqltest.1 */,
+				25002F3F1812564800114AE3 /* SqlTest.cpp */,
+				25002F4618126E4500114AE3 /* sample.db */,
+				25002F401812564800114AE3 /* SqlTest.h */,
 			);
 			path = sqltest;
+			sourceTree = "<group>";
+		};
+		25002F351812554F00114AE3 /* sqlite */ = {
+			isa = PBXGroup;
+			children = (
+				25002F371812555B00114AE3 /* sqlite3.c */,
+				25002F381812555B00114AE3 /* sqlite3.h */,
+				25002F391812555B00114AE3 /* sqlite3ext.h */,
+			);
+			name = sqlite;
+			sourceTree = "<group>";
+		};
+		25002F4318126D9800114AE3 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -117,6 +147,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				25002F3B1812555B00114AE3 /* sqlite3.c in Sources */,
+				25002F411812564800114AE3 /* SqlTest.cpp in Sources */,
 				25002F2D1812554600114AE3 /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -225,6 +257,7 @@
 				25002F341812554600114AE3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

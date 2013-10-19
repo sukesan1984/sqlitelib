@@ -7,12 +7,17 @@
 //
 
 #include <iostream>
+#include "SqlTest.h"
 
 int main(int argc, const char * argv[])
 {
-
     // insert code here...
+    SqlTest* sql = new SqlTest();
+    sql->sqliteCreateTable();
+    sql->sqliteSetValueForKey("first", "cocos2d-x");
+    sql->sqliteSetValueForKey("second", "cocos2d-iphone");
+    printf("get first:%s\n",sql->sqliteGetValueForKey("first"));
+    printf("get test:%s\n",sql->sqliteGetValueForKey("test"));
     std::cout << "Hello, World!\n";
     return 0;
 }
-
